@@ -72,6 +72,8 @@ Feel free to structure the code however you prefer and use third-party libraries
 - **Binance API Documentation:** https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md
 - **Coinbase Prime API Documentation:** https://docs.prime.coinbase.com/
 
+_Note that both APIs above are public and don't require any authentication._
+
 ## Databases
 
 For the databases portion of the test, use the `/databases` folder.
