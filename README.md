@@ -33,6 +33,8 @@ For the frontend portion of the test, use the `/frontend` folder. There are 7 fe
 6. Add a button to sort the list of currencies by alphabetical order using the symbol/code of the currencies.
 7. Add a button to apply a random shuffle to the list of currencies when it is clicked.
 
+NOTE: Please make the app be served on port `:3000`.
+
 Feel free to structure the code however you prefer and use third-party libraries at your discretion.
 
 ### API Information
@@ -65,6 +67,8 @@ Example API response (if Coinbase price of \$10,000 / BTC is the cheapest):
 3. [Bonus] Add a third exchange to compare with Binance and Coinbase Prime.
 
 Feel free to structure the code however you prefer and use third-party libraries at your discretion.
+
+NOTE: Please make the server listen on port `:4000`.
 
 ### API Information & Documentation
 
@@ -101,6 +105,17 @@ The `transactions` dataset has 1M+ rows; here are the first three:
 ## Follow-up
 
 Answer the questions in the [FOLLOW-UP.md](./FOLLOW-UP.md) file.
+
+## Docker
+
+The test contains a basic `docker-compose.yml` file. It uses the latest official NodeJS
+Docker image and creates two containers - one for backend and one for frontend.
+
+The respective folder is mounted in `/app` directory inside the container.
+
+It isn't a requirement to use it, but may be convenient.
+
+NOTE: We WILL run your code inside these containers.
 
 ## Submitting Your Code
 
