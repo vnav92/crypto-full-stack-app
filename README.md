@@ -76,7 +76,7 @@ NOTE: Please make the server listen on port `:4000`.
 ### API Information & Documentation
 
 - **Crypto Trading 101: How to Read an Exchange Order Book:** https://www.coindesk.com/crypto-trading-101-how-to-read-an-exchange-order-book
-- **Binance API Documentation:** https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md
+- **Binance API Documentation:** https://github.com/binance/binance-spot-api-docs/blob/master/rest-api.md
 - **Coinbase Prime API Documentation:** https://docs.prime.coinbase.com/
 
 _Note that both APIs above are public and don't require any authentication._
