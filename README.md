@@ -48,7 +48,7 @@ grading your design skills here.
 
 For the backend portion of the test, use the `/backend` folder. We'd like to write some code that achieves the following:
 
-1. Create a JSON API (REST or GraphQL) using Node.js which will return which cryptocurrency exchange we should use to buy a given amount of Bitcoin to minimise the amount of USD or USDT we'll spend on this trade.
+1. Create a JSON API (REST or GraphQL) using Node.js which will return which cryptocurrency exchange we should use to buy a given amount of Bitcoin to minimize the amount of USD or USDT we'll spend on this trade.
 
 Example API call (for 1 BTC):
 
@@ -66,8 +66,8 @@ Example API response (if Coinbase price of \$10,000 / BTC is the cheapest):
 }
 ```
 
-2. You'll need to compare Binance and Coinbase Prime order books and compute the best execution price for the given amount of Bitcoin we want to buy. (You can assume that 1 USDT = 1 USD at all time.)
-3. [Bonus] Add a third exchange to compare with Binance and Coinbase Prime.
+2. You'll need to compare Binance and Coinbase [order books](https://www.investopedia.com/terms/o/order-book.asp) and compute the best execution price for the given amount of Bitcoin we want to buy. (You can assume that 1 USDT = 1 USD at all time.)
+3. [Bonus] Add a third exchange to compare with Binance and Coinbase.
 
 Feel free to structure the code however you prefer and use third-party libraries at your discretion.
 
@@ -75,9 +75,9 @@ NOTE: Please make the server listen on port `:4000`.
 
 ### API Information & Documentation
 
-- **Crypto Trading 101: How to Read an Exchange Order Book:** https://www.coindesk.com/crypto-trading-101-how-to-read-an-exchange-order-book
-- **Binance API Documentation:** https://github.com/binance/binance-spot-api-docs/blob/master/rest-api.md
-- **Coinbase Prime API Documentation:** https://docs.prime.coinbase.com/
+- **[Crypto Trading 101: How to Read an Exchange Order Book](https://www.coindesk.com/crypto-trading-101-how-to-read-an-exchange-order-book)**
+- **[Binance Order Book API Endpoint](https://github.com/binance/binance-spot-api-docs/blob/master/rest-api.md#order-book)**
+- **[Coinbase Order Book API Endpoint](https://docs.cloud.coinbase.com/exchange/reference/exchangerestapi_getproductbook)**
 
 _Note that both APIs above are public and don't require any authentication._
 
