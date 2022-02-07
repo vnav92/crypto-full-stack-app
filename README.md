@@ -34,7 +34,7 @@ For the frontend portion of the test, use the `/frontend` folder. There are 7 fe
 
 3. Add a toggle to control if currencies not supported in the US should be displayed.
 4. Add a toggle to control if currencies not available in test mode should be displayed.
-   1. Filters from points 3. and 4. should be able to be combined together.
+   1. We expect that filters from points 3. and 4. can be combined together.
 5. Add a button to sort the list of currencies by alphabetical order using the name of the currencies.
 6. Add a button to sort the list of currencies by alphabetical order using the symbol/code of the currencies.
 7. Add a button to apply a random shuffle to the list of currencies when it is clicked.
