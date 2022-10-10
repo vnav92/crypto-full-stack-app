@@ -1,0 +1,28 @@
+@import '../../styles/functions';
+@import '../../styles/variables';
+
+.listWrapper {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: defaultSpacingTimes(0.5);
+}
+
+.spinnerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+@media (min-width: $sm-width-breakpoint) and (max-width: $md-width-breakpoint) {
+  .listWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: $sm-width-breakpoint) {
+  .listWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

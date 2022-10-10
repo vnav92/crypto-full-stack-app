@@ -1,0 +1,27 @@
+export type CurrencyResponse = {
+  id: string;
+  createdAt: Date;
+  updatedAt: Date;
+  type: string;
+  name: string;
+  code: string;
+  precision: number;
+  maxAmount: number | null;
+  minAmount: number | null;
+  minBuyAmount: number | null;
+  maxBuyAmount: number | null;
+  addressRegex: string;
+  testnetAddressRegex: string;
+  supportsAddressTag: boolean;
+  addressTagRegex: string | null;
+  supportsTestMode: boolean;
+  supportsLiveMode: boolean;
+  isSuspended: boolean;
+  isSupportedInUS: boolean;
+  notAllowedUSStates: string[];
+  notAllowedCountries: string[];
+  isSellSupported: boolean;
+  confirmationsRequired: boolean | null;
+  minSellAmount: number | null;
+  maxSellAmount: number | null;
+};

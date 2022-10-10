@@ -1,0 +1,7 @@
+@import './variables';
+
+@function defaultSpacingTimes($times) {
+  $result: $default-spacing * $times;
+
+  @return $result;
+}

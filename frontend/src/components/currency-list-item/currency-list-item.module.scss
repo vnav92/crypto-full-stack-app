@@ -1,0 +1,40 @@
+@import '../../styles/colors';
+@import '../../styles/functions';
+
+.listItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lighten($dark-color, 75%);
+  padding: defaultSpacingTimes(5) defaultSpacingTimes(1);
+}
+.code {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 1.25rem;
+}
+
+@media (min-width: $sm-width-breakpoint) and (max-width: $md-width-breakpoint) {
+  .code {
+    font-size: 2rem;
+  }
+
+  .name {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: $sm-width-breakpoint) {
+  .code {
+    font-size: 1.75rem;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+}

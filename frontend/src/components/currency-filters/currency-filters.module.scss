@@ -1,0 +1,79 @@
+@import '../../styles/colors';
+@import '../../styles/functions';
+@import '../../styles/variables';
+
+$shuffle-button-width: 200px;
+$button-height: defaultSpacingTimes(6);
+$desktop-button-font-size: 1.5rem;
+$mobile-button-font-size: 1rem;
+
+.currencyFiltersWrapper {
+  display: flex;
+  padding: defaultSpacingTimes(2) 0;
+  position: sticky;
+  top: $header-height;
+  background: $background-color
+}
+
+.dataManipulationWrapper {
+  display: inline-block;
+}
+
+.switchLabel {
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: defaultSpacingTimes(1);
+  padding: defaultSpacingTimes(0.75);
+}
+
+.sortButtonsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: defaultSpacingTimes(1);
+  margin-top: defaultSpacingTimes(2);
+  padding: defaultSpacingTimes(0.75);
+
+  button {
+    font-size: $desktop-button-font-size;
+    height: $button-height;
+  }
+}
+
+.shuffleButtonWrapper {
+  display: flex;
+  flex: auto;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  button {
+    width: $shuffle-button-width;
+    font-size: $desktop-button-font-size;
+    height: $button-height;
+    display: flex;
+    gap: defaultSpacingTimes(0.75);
+  }
+}
+
+@media (max-width: $sm-width-breakpoint) {
+  .currencyFiltersWrapper {
+    flex-direction: column;
+  }
+
+  .switchLabel {
+    font-size: 0.875rem;
+  }
+
+  .sortButtonsWrapper button {
+    font-size: $mobile-button-font-size;
+  }
+
+  .shuffleButtonWrapper {
+    justify-content: flex-start;
+
+    button {
+      font-size: $mobile-button-font-size;
+    }
+  }
+}

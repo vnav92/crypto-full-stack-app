@@ -1,0 +1,20 @@
+@import '../../styles/colors';
+@import '../../styles/variables';
+
+$header-wrapper-z-index: 100;
+
+.headerWrapper {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $header-height;
+  background-color: var(--chakra-colors-blue-500);
+  display: flex;
+  align-items: center;
+  z-index: $header-wrapper-z-index;
+}
+
+.companyLogo {
+  height: calc(#{$header-height} / 2);
+}

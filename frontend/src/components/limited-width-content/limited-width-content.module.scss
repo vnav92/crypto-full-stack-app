@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+@import '../../styles/functions';
+
+$sm-content-max-width: 500px;
+
+.limitedWidthContentWrapper {
+  width: 100%;
+  max-width: calc(#{$md-width-breakpoint} - 30px);
+  margin: auto;
+  max-height: 100%;
+}
+
+@media (min-width: $sm-width-breakpoint) and (max-width: $md-width-breakpoint) {
+  .limitedWidthContentWrapper {
+    max-width: calc(#{$sm-width-breakpoint} - #{defaultSpacingTimes(1)});
+  }
+}
+
+@media (max-width: $sm-width-breakpoint) {
+  .limitedWidthContentWrapper {
+    max-width: $sm-content-max-width;
+  }
+}
